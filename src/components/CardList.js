@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import axios from 'axios';
 import tiendeo from '../img/tiendeo.jpg'
-import {getCard} from '../api'
+
 
 export default function CardList({handleSelect,update}) {
     const [cards, setCards] =useState([]);

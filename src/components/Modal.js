@@ -3,8 +3,8 @@ import axios from 'axios';
 
 
 export default function Modal({editar,refresh}) {
-    //const {editar}=props
-    console.log(editar)
+    // //const {editar}=props
+    // console.log(editar)
     const [titulo1, setTitulo1]=useState(editar.titulo)
     const [descrip, setDescrip] = useState(editar.descrip)
     const [card, setCard]=useState({
@@ -76,7 +76,7 @@ const onUpdate = async (id)=>{
                    <div className="input-container">
                    <h2 className="title">Nueva Tarjeta</h2>
                     <input onChange={handleNueva} required className="input-modal" value={card.titulo} name="titulo" placeholder="Titulo" type="text" />
-                    <input onChange={handleNueva} required className="input-modal" value={card.descripcion} name="descripcion" placeholder="Descripcion" type="text" />
+                    <input onChange={handleNueva} required  className="input-modal" value={card.descripcion} name="descripcion" placeholder="Descripcion" type="text" />
                     <input onChange={handleNueva} className="input-modal" value={card.url} name="url" placeholder="Imagen (Url)" type="text" />
                     <button type="submit" className="btn-modal">Añadir</button>
                    </div>
